@@ -125,25 +125,26 @@ h2
 	justify-content: space-between;
 }
 
-.card > .left
+.card-line
 {
+	display: flex;
+	align-content: space-evenly;
 }
 
-.card > .right
+.card-line .card
 {
+	width: 497px;
+}
+
+.space
+{
+	width: 30px;
 }
 
 .card:hover
 {
 	box-shadow: 0 0 12px 2px rgba(0,0,0,0.37);
 	filter: brightness(0.9);
-}
-
-.card > .left > .sensorList
-{
-	height: 120px;
-	overflow: auto;
-	position: relative;
 }
 
 .card p
@@ -154,7 +155,12 @@ h2
 	padding-bottom: 80px;
 }
 
-.card > .left > .more
+.card img
+{
+	margin-right: 40px;
+}
+
+.card .more
 {
 	position: absolute;
 	left: 20%;
@@ -172,4 +178,12 @@ h2
 	line-height: 31px;
 
 	border-radius: 2px;
+}
+
+.card-line .card .more
+{
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
 }
