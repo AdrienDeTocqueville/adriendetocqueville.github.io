@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Adrien de Tocqueville</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<div id="links"></div>
+
+		<div id="logo">
+			<a href="/"><img src="img/profile.jpg" alt="Photo" /></a>
+			<a>Adrien <strong>de Tocqueville</strong></a>
+		</div>
+	</header>
+
+	<main>
+		<h1>Mes projets</h1>
+
+		<div class="card" onclick="window.location = 'https://github.com/AdrienDeTocqueville/minge'">
+			<div class="left">
+				<h2 class="title">3D Game Engine</h2>
+				<div class="description">
+					<p>
+						Personal project. Development of a 3D game engine using C++ and OpenGL and a physic engine for convex rigid bodies.<br>
+						Implemented using an ECS design pattern with support for graphical effects, shadows, skeletal animation and heightmaps.
+					</p>
+				</div>
+				<div class="more" type="button">Afficher plus</div>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="left">
+				<h2 class="title">Voiture Autonome</h2>
+				<div class="description">
+					<p>
+						Creation and development of a hardware accelerated C++ neural network library using the backpropagation algorithm.<br>
+						Used for the training of a convolutional neural network (CNN) to drive a car in a simulation with camera input.
+					</p>
+				</div>
+				<div class="more" type="button">Afficher plus</div>
+			</div>
+			<div class="right">
+				<iframe width="400" height="225" src="https://www.youtube.com/embed/V4Y7Ifs-_ZM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="left">
+				<h2 class="title">Formation sur les r&eacute;seaux de neurones</h2>
+				<div class="description">
+					<p>
+						Donn&eacute;e pour les &eacute;tudiants de l'ISEP dans le cadre de l'association GarageISEP.<br>
+						Formation sur les r&eacute;seaux de neurones feed forwards et l'apprentissage supervis&eacute;.
+					</p>
+				</div>
+				<div class="more" type="button">Afficher plus</div>
+			</div>
+			<div class="right">
+				<iframe width="400" height="225" src="https://www.youtube.com/embed/ct8Bmkh-4e4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
+	</main>
+		
+
+	<script type="text/javascript" id="buildLinks">
+		var medias = 
+		[
+			{
+				url: "https://www.youtube.com/channel/UCeVi00uJRgb53nUlOxUS6hQ",
+				favicon: "https://image.flaticon.com/icons/svg/187/187209.svg"
+			},
+			{
+				url: "https://github.com/adriendetocqueville",
+				favicon: "img/github.png"
+			},
+			{
+				url: "https://www.linkedin.com/in/adrien-de-tocqueville-698236161/",
+				favicon: "https://image.flaticon.com/icons/svg/179/179330.svg"
+			}
+		];
+		
+		var addMedia = (function(url, favicon)
+		{
+			favicon = favicon || url + "/favicon.ico";
+			
+			var media = document.createElement("div");
+			media.innerHTML =  `<a href="${url}"><img src="${favicon}" height="37px"></a>`;
+			
+			var medias = document.querySelector("#links");
+			
+			medias.appendChild(media);
+		});
+		
+		for (var media of medias)
+			addMedia(media.url, media.favicon);
+	</script>
+</body>
+
+</html>
