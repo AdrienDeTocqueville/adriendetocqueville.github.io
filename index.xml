@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>InterlockedNop</title>
+    <link>https://adriendetocqueville.github.io/</link>
+    <description>Recent content on InterlockedNop</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 27 Sep 2024 19:43:40 +0200</lastBuildDate>
+    <atom:link href="https://adriendetocqueville.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://adriendetocqueville.github.io/about/</link>
+      <pubDate>Fri, 27 Sep 2024 19:43:40 +0200</pubDate>
+      <guid>https://adriendetocqueville.github.io/about/</guid>
+      <description>&lt;p&gt;My name is Adrien de Tocqueville, and I am a Senior Graphics Engineer at Rockstar North.&lt;/p&gt;&#xA;&lt;p&gt;You can contact me by &lt;a href=&#34;mailto:adrien.detocqueville@gmail.com&#34;&gt;email&lt;/a&gt; or follow me on &lt;a href=&#34;https://twitter.com/otariebambelle&#34;&gt;Twitter&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
