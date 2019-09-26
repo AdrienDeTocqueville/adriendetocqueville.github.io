@@ -6,10 +6,12 @@ function fill_card(id, title, description) {
 
 function setLang(lang) {
 	if (lang == "en") {
+		document.querySelector("#about").innerHTML = "About me";
 		document.querySelector("#projects").innerHTML = "My projects";
 		for (let c of document.querySelectorAll(".more"))
 			c.innerHTML = "Show more";
 
+		document.querySelector("main > p").innerHTML = "I am a french student in last year of ISEP engineering school. I am simultaneously studying at the 42 school of Paris.<br>On this site, you will find my most interesting projetcts, wich I realised on my free time or during my schooling.";
 
 		fill_card("#minge", "3D Game Engine", "Development of a 3D game engine using C++ and OpenGL and a physic engine for convex rigid bodies.<br>Implemented using an ECS design pattern with support for graphical effects, shadows, skeletal animation and heightmaps.");
 
