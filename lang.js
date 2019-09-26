@@ -6,13 +6,25 @@ function fill_card(id, title, description) {
 
 function setLang(lang) {
 	if (lang == "en") {
-		document.querySelector("#about").innerHTML = "About me";
-		document.querySelector("#projects").innerHTML = "My projects";
 		for (let c of document.querySelectorAll(".more"))
 			c.innerHTML = "Show more";
 
+		document.querySelector("#about").innerHTML = "About me";
 		document.querySelector("main > p").innerHTML = "I am a french student in last year of ISEP engineering school. I am simultaneously studying at the 42 school of Paris.<br>On this site, you will find my most interesting projetcts, wich I realised on my free time or during my schooling.";
 
+
+		document.querySelector("#pro").innerHTML = "Internship";
+		let c = document.querySelector("#dassault");
+		c.querySelector(".title").innerHTML = "Dassault Syst&egrave;mes";
+		c.querySelectorAll("a")[0].innerHTML = "Software to visualize high resolution height data at Planet scale:";
+		c.querySelectorAll("li")[0].innerHTML = "Development of a 3D render engine using Vulkan ";
+		c.querySelectorAll("li")[1].innerHTML = "Sparse texturing and Hardware Tessellation";
+		c.querySelectorAll("a")[1].innerHTML = "Deep learning to analyze and fix these data:";
+		c.querySelectorAll("li")[2].innerHTML = "Development and training of a U-Net neural network to detect incorrect data using Python and Tensorflow";
+		c.querySelectorAll("li")[3].innerHTML = "Training of a second network to artificially generate new data";
+
+
+		document.querySelector("#projects").innerHTML = "My projects";
 		fill_card("#minge", "3D Game Engine", "Development of a 3D game engine using C++ and OpenGL and a physic engine for convex rigid bodies.<br>Implemented using an ECS design pattern with support for graphical effects, shadows, skeletal animation and heightmaps.");
 
 		fill_card("#js", "Javascript Framework", "Architecture and development of a front-end web framework to develop single-page web applications and provide a client side MVC architecture.<br>Used it in a school project to create a home automation website.");
