@@ -8,55 +8,52 @@
 </head>
 <body>
 	<header>
-		<div id="links"></div>
+		<div id="links" class="list"></div>
 
 		<div id="logo">
-			<a href="/"><img src="img/profile.jpg" alt="Photo" /></a>
+			<a href="index.html"><img src="img/profile.jpg" alt="Photo" /></a>
 			<a>Adrien <strong>de Tocqueville</strong></a>
 		</div>
+
+		<div id="lang" class="list"></div>
 	</header>
 
 	<main>
-		<h1>Mes projets</h1>
+		<h1 id="projects">Mes projets</h1>
 
 		<div class="card-line">
-		<div class="card" onclick="window.location = 'https://github.com/AdrienDeTocqueville/minge'">
+		<div id="minge" class="card" onclick="window.location = 'https://github.com/AdrienDeTocqueville/minge'">
 			<div class="left">
-				<h2 class="title">3D Game Engine</h2>
-				<div class="description">
-					<p>
-						Personal project. Development of a 3D game engine using C++ and OpenGL and a physic engine for convex rigid bodies.<br>
-						Implemented using an ECS design pattern with support for graphical effects, shadows, skeletal animation and heightmaps.
-					</p>
-				</div>
+				<h2 class="title">Moteur de Jeu 3D</h2>
+				<p>
+					Ce project est un moteur de jeu 3D d&eacute;velopp&eacute; en C++ avec OpenGL, contenant notamment un moteur physique pour des solides convexes.<br>
+					Il utilise le design pattern ECS et support quelques effets comme le render to texture et les ombres. Il permet d'avoir des skeletal animations et des heightmaps.
+				</p>
 				<div class="more" type="button">Afficher plus</div>
 			</div>
 		</div>
 		<div class="space"></div>
-		<div class="card" onclick="window.location = 'https://github.com/AdrienDeTocqueville/circular.js'">
+		<div id="js" class="card" onclick="window.location = 'https://github.com/AdrienDeTocqueville/circular.js'">
 			<div class="left">
-				<h2 class="title">Javascript Framework</h2>
-				<div class="description">
-					<p>
-						Architecture and development of a front-end web framework to develop single-page web applications and provide a client side MVC architecture.<br>
-						Used it in a school project to create a home automation website.
-					</p>
-				</div>
+				<h2 class="title">Framework Javascript</h2>
+				<p>
+					D&eacute;velopp&eacute; &agrave; deux, ce projet est un framework javascript front-end (type angular) permettant de cr&eacute;er des applications webs single-page en proposant une architecure MVC cot&eacute; client.
+					Il a &eacute;t&eacute; utilis&eacute; pour d&eacute;velopper un site de domotique dans le cadre d'un projet d'&eacute;cole;
+					
+				</p>
 				<div class="more" type="button">Afficher plus</div>
 			</div>
 		</div>
 		</div>
 
 
-		<div class="card" onclick="window.location = 'https://github.com/AdrienDeTocqueville/voitureautonome'">
+		<div id="car" class="card" onclick="window.location = 'https://github.com/AdrienDeTocqueville/voitureautonome'">
 			<div class="left">
 				<h2 class="title">Voiture Autonome</h2>
-				<div class="description">
-					<p>
-						Creation and development of a hardware accelerated C++ neural network library using the backpropagation algorithm.<br>
-						Used for the training of a convolutional neural network (CNN) to drive a car in a simulation with camera input.
-					</p>
-				</div>
+				<p>
+					Pour ce projet de voiture autonome, j'ai voulu cr&eacute;er ma propre biblioth&egrave;que d'entrainement de r&eacute;seau de neurones en C++. Pour acc&eacute;lerer les entrainements, elle effectue toutes les op&eacute;rations mat&eacute;hmatiques avec OpenCL en backend.<br>
+					J'ai l'ai ensuite utilis&eacute;e pour entrainer un r&eacute;seau de neurone convolutif travaillant sur des images prises par une cam&eacute;ra virtuelle dans un jeu (dans mon moteur 3D)
+				</p>
 				<div class="more" type="button">Afficher plus</div>
 			</div>
 			<div class="right">
@@ -64,15 +61,13 @@
 			</div>
 		</div>
 
-		<div class="card" onclick="window.location = 'https://www.youtube.com/embed/ct8Bmkh-4e4'">
+		<div id="garage" class="card" onclick="window.location = 'https://www.youtube.com/embed/ct8Bmkh-4e4'">
 			<div class="left">
 				<h2 class="title">Formation sur les r&eacute;seaux de neurones</h2>
-				<div class="description">
-					<p>
-						Donn&eacute;e pour les &eacute;tudiants de l'ISEP dans le cadre de l'association GarageISEP.<br>
-						Formation sur les r&eacute;seaux de neurones feed forwards et l'apprentissage supervis&eacute;.
-					</p>
-				</div>
+				<p>
+					C'est une formation que j'ai pr&eacute;par&eacute;e puis donn&eacute;e pour les &eacute;tudiants de l'ISEP dans le cadre de l'association GarageISEP.<br>
+					Formation sur les r&eacute;seaux de neurones feed forwards et l'apprentissage supervis&eacute;.
+				</p>
 				<div class="more" type="button">Afficher plus</div>
 			</div>
 			<div class="right">
@@ -80,24 +75,38 @@
 			</div>
 		</div>
 
-		<div class="card" onclick="window.location = 'https://github.com/AdrienDeTocqueville/42sh'">
+		<div id="sh" class="card" onclick="window.location = 'https://github.com/AdrienDeTocqueville/42sh'">
 			<div class="left">
 				<h2 class="title">Shell</h2>
-				<div class="description">
-					<p>
-						Pure C project to build a UNIX shell from scratch.<br>
-						It supports shell scripting, autocompletion and job control.<br>
-						Made with 3 students as the last branch project at school 42.
-					</p>
-				</div>
+				<p>
+					J'ai r&eacute;alis&eacute; de shell dans le cadre de ma formation &agrave; l'&eacute;cole 42.<br>
+					C'est un projet de fin de branche que nous avons fait &agrave; 4.<br>
+					C'est un shell UNIX &eacute;crit en C pure, sans aucune biblioth&egrave;que externe. Il supporte l'&eacute;dition de ligne, l'autocompletion, le job control et en partie le shell scripting.
+				</p>
 				<div class="more" type="button">Afficher plus</div>
 			</div>
 			<div class="right">
 				<img height="225" src="img/42.png" alt="42" />
 			</div>
 		</div>
+
+		<div id="mario" class="card" onclick="window.location = 'https://github.com/AdrienDeTocqueville/MarioBros'">
+			<div class="left">
+				<h2 class="title">Jeu Mario Bros avec IA</h2>
+				<p>
+					Jeu en 2D cr&eacute;e avec la SFML dans le but d'apprendre le C puis le C++.<br>
+					J'ai plus tard int&eacute;gr&eacute; une IA pour permettre &agrave; un agent autonome de jouer au jeu gr&acirc;ce &agrave; un algorithme g&eacute;n&eacute;tique appel&eacute; NEAT.<br>
+					Ce projet &agrave; &eacute;t&eacute; inspir&eacute; par la video de SethBling sur ce sujet.
+				</p>
+				<div class="more" type="button">Afficher plus</div>
+			</div>
+			<div class="right">
+				<iframe width="400" height="225" src="https://www.youtube.com/embed/FbO0RLR879c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
 	</main>
 		
+	<script type="text/javascript" src="lang.js"></script>
 
 	<script type="text/javascript" id="buildLinks">
 		var medias = 
@@ -130,6 +139,25 @@
 		
 		for (var media of medias)
 			addMedia(media.url, media.favicon);
+
+
+		var addLang = (function(language, url)
+		{
+			var lang = document.createElement("div");
+			lang.innerHTML =  `<a href="${url}"><img src="img/${language}.png" height="25px"></a>`;
+			
+			var langs = document.querySelector("#lang");
+			
+			langs.appendChild(lang);
+		});
+
+		let lang = new URL(window.location.href).searchParams.get("lang");
+		if (lang == "en") {
+			addLang("fr", "index.html");
+			setLang("en");
+		}
+		else
+			addLang("en", "index.html?lang=en");
 	</script>
 </body>
 
