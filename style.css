@@ -155,6 +155,13 @@ h2
 	width: 30px;
 }
 
+.right
+{
+	display: flex;
+	flex-direction: "column";
+	align-items: center;
+}
+
 .card:hover
 {
 	box-shadow: 0 0 12px 2px rgba(0,0,0,0.37);
@@ -167,10 +174,13 @@ h2
 	margin-left: 5px;
 	margin-right: 15px;
 	padding-bottom: 80px;
+	text-align: justify;
+	text-justify: inter-word;
 }
 
 .card img
 {
+	margin-left: 40px;
 	margin-right: 40px;
 }
 

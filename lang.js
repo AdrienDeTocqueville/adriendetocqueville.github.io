@@ -19,6 +19,9 @@ function setLang(lang) {
 
 		fill_card("#car", "Autonomous car", "Creation and development of a hardware accelerated C++ neural network library using the backpropagation algorithm.<br>Used for the training of a convolutional neural network (CNN) to drive a car in a simulation with camera input.");
 
+		fill_card("#air", "French Robotics Cup", "Associative school project at ISEP to compete at the 2018 and 2019 French Robotics Cup.<br>Vice president of the association, I led a technical team of 8 people.<br>Oversaw technical developments, education and cohesion of the team.<br>We worked on the strategy, 3D modeling, electronics, software, construction and the autonomous steering algorithm.");
+
+
 		fill_card("#garage", "Neural network formation", "This is a formation I made and gave to ISEP students to introduce them to feed forward neural networks and supervised learning.<br><br>The video has more than 11000 views as of today !");
 
 		fill_card("#sh", "Shell", "Pure C project with no external library. It is a UNIX shell built from scratch.<br>It supports line editing, autocompletion, job control and some shell scripting.<br>Made with 3 students as the last branch project at school 42.");
