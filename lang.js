@@ -29,6 +29,8 @@ function setLang(lang) {
 
 		fill_card("#js", "Javascript Framework", "Architecture and development of a front-end web framework to develop single-page web applications and provide a client side MVC architecture.<br>Used it in a school project to create a home automation website.");
 
+		fill_card("#jim", "Plateformer 2D", "2D plateformer made with Unity during my semester at Polytechnique Montréal.");
+
 		fill_card("#car", "Autonomous car", "Creation and development of a hardware accelerated C++ neural network library using the backpropagation algorithm.<br>Used for the training of a convolutional neural network (CNN) to drive a car in a simulation with camera input.");
 
 		fill_card("#air", "French Robotics Cup", "Associative school project at ISEP to compete at the 2018 and 2019 French Robotics Cup.<br>Vice president of the association, I led a technical team of 8 people.<br>Oversaw technical developments, education and cohesion of the team.<br>We worked on the strategy, 3D modeling, electronics, software, construction and the autonomous steering algorithm.");
